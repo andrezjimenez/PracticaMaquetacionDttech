@@ -24,6 +24,7 @@ body{
 
 .nav-bar {
     display: flex;
+    justify-content: space-between;
     font-family: var(--font-inter);
     font-size: 8rem;
     padding-bottom: 10px;
@@ -36,15 +37,16 @@ body{
 .nav-bar .nav-bar__logo{
     width: 15rem;
     height: auto;
-    margin: 0 auto;
+    margin: 0 10px 0 10px;   
+    /* margin: 0 auto; */
 }
 .nav-bar__menu-list ul{
     display: flex;
-    
     font-family: var(--font-sans);
     color: var(--just-white);
     font-weight: bold;
     list-style: none;
+    margin-right: 25px;
 }
 .nav-bar__menu-list ul a {
     text-decoration: none;
@@ -185,8 +187,8 @@ body{
 
 .main-coverage-left {
     height: auto;
-    width: 100%;
-    min-height: 400px;
+    width: 50%;
+    min-height: 320px;
     min-width: 520px;
     background-image: url('../assets/media/Bogota_map.png');
     background-position: center;
@@ -396,6 +398,43 @@ body{
     color: var(--warm-black1);
     font-family: var(--font-sans) ;
 }
+.btn-wsp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+    background: #4dc247;
+    color: var(--just-white);
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--off-white);  
+    z-index: 100;
+    text-decoration: none;
+}
+.btn-wsp img{
+    width: 25px;
+    height: 25px;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: var(--just-white);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+
 
 footer{
     background-color: var(--dtech-blue);
@@ -406,8 +445,7 @@ footer{
     gap: 15px; 
     width: 90%;
     margin: 0 auto;
-    border-bottom: 1px solid var(--off-white);
-    
+    border-bottom: 1px solid var(--off-white);    
 }
 footer section {
     margin: 24px 0 24px 0;
