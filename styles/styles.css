@@ -7,7 +7,7 @@
     --warm-black: #201E1C;
     --warm-black1: #282623;
     --grey: #BABABA;
-    --off-white:#FAF8F7;
+    --off-white:#eeebe9;
     --just-white: #FFFFFF;
 }
 html{
@@ -27,9 +27,8 @@ body{
     font-size: 8rem;
     padding-bottom: 10px;
     padding-top: 10px;
-     background-color: var(--off-white); /*var(--dtech-blue); */
-
-    border-bottom: 1px solid var(--grey);
+    background-color: var(--dtech-blue); /*var(--dtech-blue); */
+    /* border-bottom: 1px solid var(--grey); */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     margin: 0 auto;
     
@@ -77,7 +76,7 @@ body{
     min-width: 320px;
     height: auto;
     padding: 20px;
-    background-color: var(--warm-black1);
+    background-color: var(--off-white);
 }
  .product-detail--card .maintenance-icon { 
     display: inline-block;
@@ -107,15 +106,15 @@ body{
  .main-servicios-detail--title h2{
     margin-top: 18px;
     margin-bottom: 20px;    
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    color: var(--just-white);
+    color: var(--warm-black);
     font-family: var(--font-inter);
 }
 .main-servicios-detail--title p{
-    font-size: 1.3rem;
-    color: var(--grey);
+    font-size: 1.4rem;
+    color: var(--warm-black1);
     font-family: var(--font-sans);
     margin-bottom: 16px;
 
@@ -132,7 +131,7 @@ body{
     /* min-width: 320px; */
     height: auto;
     margin-top: 16px;
-    background-color: var(--warm-black);
+    background-color: var(--dtech-blue);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0 0.16);    
 }
@@ -191,10 +190,9 @@ body{
 .steps-service-title p{
     font-size: 1.3rem;
     color: var(--warm-black);
+    text-align: center;
     font-family: var(--font-sans);
     margin-bottom: 16px;
-    text-align: justify;
-    font-weight:  bold;
 }
 .main-steps-detail--body{
     display: grid;
@@ -336,8 +334,12 @@ body{
     margin: 0 auto;
     text-align: justify;
     place-content: center;
-    place-self: center stretch;
-    
+    place-self: center stretch;    
+}
+.main-warranty-title{
+    font-size: 1.8rem;
+    font-family: var(--font-sans);
+    text-align: center;
 }
 .main-warranty-left {
     height: auto;
