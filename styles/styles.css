@@ -1,0 +1,441 @@
+:root{
+    --font-sans:'DM Sans', sans-serif;
+    --font-inter:'Inter', sans-serif;
+    --blue: #0035f8;
+    --dtech-blue:#007cb6;
+    --secondary-blue: #1A9AF7;
+    --warm-black: #201E1C;
+    --warm-black1: #282623;
+    --grey: #BABABA;
+    --off-white:#FAF8F7;
+    --just-white: #FFFFFF;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+}
+.nav-bar {
+    display: flex;
+    font-family: var(--font-inter);
+    font-size: 8rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+     background-color: var(--off-white); /*var(--dtech-blue); */
+
+    border-bottom: 1px solid var(--grey);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    margin: 0 auto;
+    
+}
+.nav-bar .nav-bar__logo{
+    width: 15rem;
+    height: auto;
+    margin: 0 auto;
+}
+.nav-bar .nav-bar__menu{
+    display: grid;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid var(--grey); */
+    /* border-radius: 50%; */
+    /* box-shadow: 0px 4px 8px rgb(89,73,30, 0.16 ); */
+}
+.nav-bar__menu__icon{
+    width: 30px;
+    height: 30px;
+}
+.section-principal{
+    height: 40vh;
+    width: 100%;
+    min-width: 320px;
+    background-image: url('../assets/media/fondo-section.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.section-principal h2{
+    padding-top: 60px;
+    font-size: 3rem;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    color: var(--off-white);
+    text-align: center; 
+}
+.main-servicios{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--warm-black1);
+}
+ .product-detail--card .maintenance-icon { 
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/Mantenimiento_small.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .advice-icon { 
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/advice.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-servicios-detail--title{
+    width: 90%;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+ }
+ .main-servicios-detail--title h2{
+    margin-top: 18px;
+    margin-bottom: 20px;    
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--just-white);
+    font-family: var(--font-inter);
+}
+.main-servicios-detail--title p{
+    font-size: 1.3rem;
+    color: var(--grey);
+    font-family: var(--font-sans);
+    margin-bottom: 16px;
+
+}
+.main-service-detail--body{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 370px));
+    grid-template-rows: 1fr;
+    gap: 15px; 
+}
+.product-article--container {    
+   /* -- width: 370px; */
+    /* min-width: 320px; */
+    height: auto;
+    margin-top: 16px;
+    background-color: var(--warm-black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0 0.16);    
+}
+.product-detail--card{
+    width: 90%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 150px;
+    height: 360;
+    margin: 15px auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;   
+}
+.product--card-title{
+    font-size: 1.5rem;
+    font-family: var(--font-sans) ;
+    color: var(--just-white);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.product--card-body{
+    font-family: var(--font-sans) ;
+    color: var(--grey);
+    font-size: 1.2rem;
+}
+
+.main-coverage-left {
+    height: auto;
+    width: 100%;
+    min-height: 400px;
+    min-width: 520px;
+    background-image: url('../assets/media/Bogota_map.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16); */
+} 
+
+
+.main-steps-service{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--off-white);
+}
+.steps-service-title h2{
+    margin-top: 18px;
+    margin-bottom: 20px;    
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--warm-black);
+    font-family: var(--font-inter);
+}
+.steps-service-title p{
+    font-size: 1.3rem;
+    color: var(--warm-black);
+    font-family: var(--font-sans);
+    margin-bottom: 16px;
+    text-align: justify;
+    font-weight:  bold;
+}
+.main-steps-detail--body{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px , 280px));
+    grid-template-rows: 1fr;
+    gap: 15px; 
+}
+.steps-article--container {    
+     width: 280px;
+     /* min-width: 320px; */
+     height: auto;
+     margin-top: 16px;
+     background-color: var(--dtech-blue);
+     border-radius: 5px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0 0.16);    
+ }
+.steps-detail--card{
+    width: 90%;
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 150px;
+    height: 360;
+    margin: 15px auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;   
+    text-align: center;
+}
+.steps-detail--card .maintenance-icon { 
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/Mantenimiento_small.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.steps-detail--card .calendar-icon { 
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/calendar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.steps--card-title{
+    font-size: 1.5rem;
+    font-family: var(--font-sans) ;
+    color: var(--just-white);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.steps--card-body{
+    font-family: var(--font-sans) ;
+    color: var(--grey);
+    font-size: 1.2rem;
+}
+.steps-detail--card .contacts-icon { 
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/contact.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.steps-detail--card .calendar-icon { 
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/calendar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.steps-detail--card .ubication-icon { 
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/ubication.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.steps-detail--card .delivery-icon { 
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/delivery.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.steps-detail--card .repair-icon { 
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/repair.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.steps-detail--card .payment-icon { 
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    background-image: url('../assets/Icons/payment.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-warranty{    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-warranty-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 570px));
+    grid-template-rows: 1fr;
+    width: 90%;
+    min-width: 300px;
+    gap: 15px; 
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    place-content: center;
+    place-self: center stretch;
+    
+}
+.main-warranty-left {
+    height: auto;
+    width: 100%;
+    min-height: 200px;
+    min-width: 320px;
+    background-image: url('../assets/media/garantia.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16); */
+} 
+.main-warranty-rigth{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+.main-warranty-rigth h2{    
+    font-size: 2rem;
+    font-family: var(--font-sans) ;
+    text-align:  center;
+    margin-bottom: 24px;
+}
+.main-warranty-rigth p{
+    padding: 0 5px 0 5px;
+    font-size: 1.4rem;
+    color: var(--warm-black1);
+    font-family: var(--font-sans) ;
+}
+
+footer{
+    background-color: var(--dtech-blue);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px; 
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--off-white);
+    
+}
+footer section {
+    margin: 24px 0 24px 0;
+}
+.left-title h3 {
+    font-size: 1.4rem;
+    font-family: var(--font-sans);
+    color: var(--just-white);
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+.left-title p{
+    font-size: 1.2rem;
+    font-family: var(--font-sans);
+    color: var(--just-white);
+}
+.footer-rigth{
+    font-size: 1.2rem;
+    font-family: var(--font-sans);
+    color: var(--just-white);
+}
+.footer-logo{
+    left: -20px;
+    width: 150px;
+    margin-bottom: 12px;
+}
+.footer-rigth p {
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--off-white);
+}
+.footer-rigth-social{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.footer-rigth-social ul{
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.footer-rigth-social li {
+    margin: 10px 0;
+}
+.footer-rigth-social img {
+    width: 25px;
+}
+.made-by{
+    text-align: center;
+    margin: 12px 0 24px 0;
+}
+.made-by p,a{
+    font-size: 1.2rem;
+    font-family: var(--font-sans);
+    color: var(--just-white);
+}
