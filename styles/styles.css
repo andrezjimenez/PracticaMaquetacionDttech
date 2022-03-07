@@ -418,10 +418,7 @@ body{
     border: 1px solid var(--off-white);  
     z-index: 100;
     text-decoration: none;
-}
-.btn-wsp img{
-    width: 25px;
-    height: 25px;
+    font-size: 3rem;
 }
 
 .btn-wsp:hover{
@@ -495,8 +492,12 @@ footer section {
     margin: 10px 0;
 }
 .footer-rigth-social img {
-    width: 25px;
+    
 }
+.footer-rigth-social a i {
+    font-size: 2.5rem;
+}
+
 .made-by{
     text-align: center;
     margin: 12px 0 24px 0;
