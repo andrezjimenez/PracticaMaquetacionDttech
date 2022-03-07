@@ -335,19 +335,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-warranty{    
     margin-top: 20px;
     margin-bottom: 20px;
@@ -433,6 +420,149 @@ body{
         line-height: 66px;
 	}
 }
+
+.main-our-detail--body{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 450px));
+    grid-template-rows: 1fr;
+    gap: 20px; 
+}
+.our-article--container {    
+    /* -- width: 370px; */
+     /* min-width: 320px; */
+     height: auto;
+     margin-top: 16px;
+     /* background-color: var(--dtech-blue); */
+     border: 1px solid var(--dtech-blue);
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+     border-radius: 24px;
+ }
+ .our-detail--card{
+    width: 90%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 150px;
+    height: 360;
+    margin: 15px auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;   
+}
+.our--card-title{
+    font-size: 2rem;
+    font-family: var(--font-sans) ;
+    color: var(--warm-black);
+    font-weight: bold;
+    padding-bottom: 24px;
+    text-align: center;
+}
+.our--card-body{
+    font-family: var(--font-sans) ;
+    color: var(--grey);
+    font-size: 1.5rem;
+    color: var(--warm-black);
+    /* color: var(--just-white); */
+    text-align: justify;
+}
+.main-our-team{    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-our-team-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 400px));
+    grid-template-rows: 1fr;
+    width: 90%;
+    min-width: 300px;
+    gap: 15px; 
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    place-content: center;
+    place-self: center stretch; 
+    padding: 24px;   
+}
+.main-our-team-title{
+    font-size: 1.8rem;
+    font-family: var(--font-sans);
+    text-align: center;
+}
+.our-team--card{
+    width: 90%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 150px;
+    height: 360;
+    margin: 15px auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;   
+    background-color: var(--warm-black);
+    
+}
+.our-detail--card-info{
+    border: 1px black solid;
+    display: inline-block;
+    background-color:var(--off-white);
+    border: 1px solid var(--dtech-blue);
+    padding: 5%;
+    width: 320px;
+    text-align: left;
+    border-radius: 24px;
+    position: absolute;
+    margin-top: 8px;
+}
+
+.our-detail--card-photo {
+    display:  inline-block;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    padding: 1px;
+    top: -30%;
+    left: 35%;
+    border-radius: 75px;    
+    background-color: var(--just-white);
+    border: 4px solid var(--dtech-blue);
+    text-align: center;
+}
+.our-detail--card-photo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 75px;       
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
