@@ -563,7 +563,7 @@ body{
     min-width: 320px;
     height: auto;
     padding: 20px;
-    background-color: var(--off-white);
+    background-color: var(--just-white);
     
 }
 .main-contact-detail--title{
@@ -593,6 +593,16 @@ body{
     font-family: var(--font-sans);
     margin-bottom: 16px;
 }
+.main-contact-detail--body {
+    width: 90%;
+    max-width: 620px;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: var(--just-white);
+    padding-bottom: 15px;
+}
 .contact-form{
     display: flex;
     flex-wrap: wrap;
@@ -607,6 +617,7 @@ body{
     font-size: 1.5rem;
 }
 .contact-form input{
+    width: auto;
     border: none;
     border-radius: 8px; 
     height: 32px;
