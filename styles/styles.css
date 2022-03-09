@@ -556,6 +556,65 @@ body{
     font-size: 3rem;
     color: black;
 }
+
+/* /////////////////////////////////// Contact section */
+.main-contact{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--off-white);
+    
+}
+.main-contact-detail--title{
+    width: 90%;
+    max-width: 620px;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: var(--just-white);
+    padding-bottom: 15px;
+ }
+ .main-contact-detail--title h2{
+    margin-top: 18px;
+    margin-bottom: 20px;    
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--warm-black);
+    font-family: var(--font-inter);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main-contact-detail--title p{
+    font-size: 1.4rem;
+    color: var(--warm-black1);
+    font-family: var(--font-sans);
+    margin-bottom: 16px;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: var(--font-sans);
+    margin: 10px;
+}
+.contact-form  label{
+    padding: 4px 0 4px 0;
+    font-size: 1.5rem;
+}
+.contact-form input{
+    border: none;
+    border-radius: 8px; 
+    height: 32px;
+    font-size: 1.5rem;
+    padding: 4px;
+    margin-bottom: 12px;
+    background-color: var(--off-white)
+}
 /* /////////////////////////////////  Footer de la pagina ///////////////////////////////////// */
 footer{
     background-color: var(--dtech-blue);
