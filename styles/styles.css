@@ -77,8 +77,48 @@ body{
     height: 30px;
     font-size: 4rem;
     color: var(--off-white);
-    margin-left: 30px;
-    
+    margin-left: 30px;    
+}
+
+.active {
+    transform: translate(-600px);
+}
+.opacity{ 
+    background-color: var(--warm-black);
+    transition: all .5s ease;
+}
+
+.nav-bar__menu-mobile{
+    margin-top: 5rem ;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    font-size: 2rem;
+    color: var(--off-white);
+    background-color: var(--dtech-blue);
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+}
+.nav-bar__menu-mobile ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    list-style: none; 
+    cursor: pointer;
+}
+.nav-bar__menu-mobile ul a{
+    margin-top: 25px;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    list-style: none; 
+    cursor: pointer;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.nav-bar__menu-mobile ul li:hover {
+    background-color: var(--just-white);
+    color: var(--warm-black1);
 }
 .section-principal{
     height: 40vh;
