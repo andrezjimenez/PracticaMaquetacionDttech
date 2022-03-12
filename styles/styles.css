@@ -89,6 +89,7 @@ body{
 }
 
 .nav-bar__menu-mobile{
+    display: none;
     margin-top: 5rem ;
     width: 100%;
     height: 30%;
@@ -701,6 +702,14 @@ body{
         line-height: 66px;
 	}
 }
+/* ////////////// Catalogo */
+.main-catalogo {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 370px));
+    grid-template-rows: 1fr;
+    gap: 15px; 
+}
 /* /////////////////////////////////  Footer de la pagina ///////////////////////////////////// */
 footer{
     background-color: var(--dtech-blue);
@@ -780,5 +789,8 @@ footer section {
     }
     .nav-bar__menu-list {
         display: none;
+    }
+    .nav-bar__menu-mobile{
+        display: block;
     }
 }
